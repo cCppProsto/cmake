@@ -37,6 +37,3 @@ file(GLOB
 #add_executable(${PROJECT_NAME} ${SOURCES})
 # or 
 add_executable(${PROJECT_NAME} ${CPPS} ${C})
-
-install(TARGETS ${PROJECT_NAME} DESTINATION bin)
-
