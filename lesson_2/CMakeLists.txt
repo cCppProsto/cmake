@@ -12,7 +12,7 @@ set (cmake_example_2_VERSION "${cmake_example_2_VERSION_MAJOR}.${cmake_example_2
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -Wall")
 
 file(GLOB 
-          CPP_SOURCES "src/main.cpp")
+          CPP_SOURCES "src/*.cpp")
 
 # Call configure files on ver.h.in to set the version.
 configure_file(
@@ -26,6 +26,7 @@ configure_file(
               )
 
 include_directories("${PROJECT_BINARY_DIR}")
+include_directories("${PROJECT_SOURCE_DIR}/include")
 
 add_executable(${PROJECT_NAME} ${CPP_SOURCES})
 
