@@ -1,0 +1,8 @@
+#ifndef __PATH_H__
+#define __PATH_H__
+
+// version variable that will be substituted by cmake
+const char* g_source_path = "@PROJECT_SOURCE_DIR@";
+const char* g_binary_path = "@PROJECT_BINARY_DIR@";
+
+#endif

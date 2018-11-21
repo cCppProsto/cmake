@@ -1,0 +1,7 @@
+#ifndef __VER_H__
+#define __VER_H__
+
+// version variable that will be substituted by cmake
+const char* g_version = "${${PROJECT_NAME}_VERSION}";
+
+#endif
